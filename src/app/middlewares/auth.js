@@ -6,7 +6,7 @@ import authConfig from '../../config/auth';
 // middleware na verdade é uma função de que recebe além da requisição e resposta um next
 export default async (req, res, next) => {
   // pegando o token dos headers da requisição
-  const authHeader = req.headers.autorization;
+  const authHeader = req.headers.authorization;
 
   // caso não exista o token, já retorna menssagem de erro
   if (!authHeader) {
